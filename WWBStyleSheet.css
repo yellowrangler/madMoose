@@ -1,0 +1,1902 @@
+#allcontent {
+		background-color: white;
+		width:<?php print $allcontentWidth; ?>px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		margin-left: auto;
+		margin-right: auto;
+		}
+
+.Banner {
+		position: absolute;
+		overflow:hidden;
+		display:block;
+		left:0px;
+		top:0px;
+		z-index: +1;
+		height:<?php print $BannerHeight; ?>px;
+		width:<?php print $BannerWidth; ?>px;
+		background: <?php print $BannerBackgroundColor; ?>;
+		}
+		
+.BannerText {
+		position: absolute;
+		top:<?php print $BannerTextHeight; ?>px;
+		left:<?php print $BannerTextLeft; ?>px;
+		width:<?php print $BannerTextWidth; ?>px;
+		z-index: +3;
+		}
+		
+.MainNav {
+		position: absolute;
+		display: inline;
+		left:0px;
+		top:<?php print $MainNavTop; ?>px;
+		height:<?php print $MainNavHeight; ?>px;
+		width:<?php print $MainNavWidth; ?>px; 
+		background: <?php print $MainNavBackgroundColor; ?>;
+		}
+
+.MainNavTabsUpper {
+		position: absolute;
+		top:0px;
+		margin:0;
+		padding:0;
+		height:<?php print $MainNavTabUpperHeight; ?>px;
+		line-height:<?php print $MainNavTabUpperHeight - 2; ?>px;
+		width:<?php print $MainNavWidth; ?>px; 
+		border-top:0px <?php print $MainNavTabUpperColor; ?>;
+		border-left:2px white;
+		border-right:0px <?php print $MainNavTabUpperColor; ?>;
+		border-bottom:0px <?php print $MainNavTabUpperColor; ?>;
+		}
+
+.MainNavTabsUpperCell {
+		color: <?php print $MainNavTabUpperTextColor; ?>; 
+		font: 700 11px verdana,sans-serif; 
+		vertical-align: middle;
+		text-align: center;
+		border-top:0px <?php print $MainNavTabUpperColor; ?>;
+		border-left:1px white;
+		border-right:0px <?php print $MainNavTabUpperColor; ?>;
+		border-bottom:0px <?php print $MainNavTabUpperColor; ?>;
+		text-decoration: none;
+		background: <?php print $MainNavTabUpperColor; ?>;
+		}		
+
+.MainNavTabsUpperCell:hover {
+		color: <?php print $MainNavTabUpperTextHoverColor; ?>; 
+		font: 700 11px verdana,sans-serif; 
+		vertical-align: middle;
+		text-align: center;
+		border-top:0px <?php print $MainNavTabUpperColor; ?>;
+		border-left:1px white;
+		border-right:0px <?php print $MainNavTabUpperColor; ?>;
+		border-bottom:0px <?php print $MainNavTabUpperColor; ?>;
+		text-decoration: none;
+		background: <?php print $MainNavTabUpperColor; ?>;
+		}		
+
+.MainNavTabsUpperCellSelect {
+		color: <?php print $MainNavTabUpperCellSelectTextColor; ?>; 
+		font: 700 11px verdana,sans-serif; 
+		vertical-align: middle;
+		text-align: center;
+		border-top:0px <?php print $MainNavTabUpperColor; ?>;
+		border-left:1px white;
+		border-right:0px <?php print $MainNavTabUpperColor; ?>;
+		border-bottom:0px <?php print $MainNavTabUpperColor; ?>;
+		text-decoration: none;
+		background: <?php print $MainNavTabUpperCellSelectColor; ?>;
+		}	
+		
+.MainNavLower {
+		position: absolute;
+		top:<?php print $ManinNavLowerTop; ?>px;
+		left:0px;
+		margin:0;
+		padding:0;
+		line-height:<?php print $ManinNavLowerHeight; ?>px;
+		height:<?php print $ManinNavLowerHeight; ?>px;
+		width:<?php print $MainNavWidth; ?>px; 
+		background: <?php print $ManinNavLowerColor; ?>;
+		}
+
+.LeftNav {
+		position: absolute;
+		left:0px;
+		top:<?php print $LeftNavTop; ?>px;
+		width:<?php print $LeftNavWidth; ?>px;
+		height:<?php print $LeftNavHeight; ?>px;
+		background:<?php print $LeftNavBackgroundColor; ?>;
+		}
+		
+.supportedCauses {
+		position: absolute;
+		left:0px;
+		top:<?php print $supportedCausesTop; ?>px;
+		width:<?php print $supportedCausesWidth; ?>px;
+		height:<?php print $supportedCausesHeight; ?>px;
+		background:<?php print $supportedCausesBackgroundColor; ?>;
+		}			
+		
+#LeftNav-side-nav {
+	list-style: none;
+	margin: 0;
+	padding: 0;  
+}
+
+
+#LeftNav-side-nav li {
+	font: 500 12px Verdana, Arial, Helvetica, sans-serif; 
+	margin: 0;
+	padding: 0;  
+	line-height:15px;
+	border-top: 0px  solid  #c6d0d0;
+	/* IE/Win gets upset if there is no bottom border... Go figure. */
+	border-bottom: 1px  solid #c6d0d0;
+	background-color: #468e8b;
+}	
+
+#LeftNav-side-nav li strong {
+	font: 800 13px Verdana, Arial, Helvetica, sans-serif;
+	display: block;
+	line-height:20px;
+	border: 0px solid  #c6d0d0;
+	border-bottom: 1px  solid #c6d0d0;
+	color: #c6d0d0;
+	background-color: #1b5f5d;
+}	
+
+#LeftNav-side-nav li strong  a {
+        font: 500 12px Verdana, Arial, Helvetica, sans-serif;
+        display: block;
+        line-height:20px;
+        background-color: white;
+        border-bottom: 0px solid  white;
+        color: black;
+		padding: 0 6;
+}       
+
+#LeftNav-side-nav a {
+
+	color: black;
+	display: block;
+	text-decoration: none;
+	margin: 0;
+	padding: 4 6;
+
+}
+
+#LeftNav-side-nav a:hover {
+	background-color: #70b1af;
+	color: blue;
+}
+
+#LeftNav-side-nav strong a {
+	font-weight: normal;
+	color: black; !important;
+	background-color: white;
+	margin: 0;
+	padding: 2 6;
+
+}
+
+#LeftNav-side-nav strong a:hover {
+	background-color:  white; !important;
+}
+
+.Workarea {
+		position: absolute;
+		overflow: hidden;
+		left:<?php print $WALeft; ?>px;
+		top:<?php print $WATop; ?>px;
+		width:<?php print $WAWidth; ?>px;
+		height:<?php print $WAHeight; ?>px;
+		background: <?php print $WABackgroundColor; ?>;
+		}
+
+.WAbreadCrumb {
+		position: absolute;
+		display:block;
+		overflow: hidden;
+		left:<?php print $WAbreadcrumbLeft; ?>px;
+		top:<?php print $WAbreadcrumbTop; ?>px;
+		width:<?php print $WAbreadcrumbWidth; ?>px;
+		height:<?php print $WAbreadcrumbHeight; ?>px;
+		background: <?php print $WAbreadcrumbBackgroundColor; ?>;
+		}
+	
+.breadCrumb   { 
+		font: <?php print $WAbreadcrumbTextWeight; ?> <?php print $WAbreadcrumbTextFontSize; ?>px <?php print $WAbreadcrumbTextFonts; ?>; 
+		color: <?php print $WAbreadcrumbTextColor; ?>;
+		line-height: <?php print $WAbreadcrumbTextLineHeight; ?>px;
+		text-decoration: none;
+		}
+				
+.breadCrumb:hover   { 
+		color: <?php print $WAbreadcrumbTextColoHover; ?>;
+		font: <?php print $WAbreadcrumbTextWeight; ?> <?php print $WAbreadcrumbTextFontSize; ?>px <?php print $WAbreadcrumbTextFonts; ?>; 
+		line-height: <?php print $WAbreadcrumbTextLineHeight; ?>px; 
+		text-decoration: none;
+		}
+
+.WAtitleBorder {
+		position: absolute;
+		display:block;
+		overflow: hidden;
+		top:<?php print $WAtitleborderTop; ?>px;
+		left:<?php print $WAtitleborderLeft; ?>px;
+		width:<?php print $WAtitleborderWidth; ?>px;
+		height:<?php print $WAtitleborderHeight; ?>px;
+		background: <?php print $WAtitleborderBackgroundColor; ?>;
+		}
+
+.titleBorder {
+		color:<?php print $WAtitleborderTextColor; ?>;
+		font: <?php print $WAtitleborderTextWeight; ?> <?php print $WAtitleborderTextFontSize; ?>px <?php print $WAtitleborderTextFonts; ?>;
+		text-align: <?php print $WAtitleborderTextAlign; ?>;
+		font-style: <?php print $WAtitleborderTextLineStyle; ?>;
+		border-bottom:<?php print $WAtitleborderBottomSize; ?>px solid <?php print $WAtitleborderBottomColor; ?>;
+		}
+
+.WAhome {
+		position: absolute;
+		display:block;
+		overflow: hidden;
+		left:<?php print $WAhomeLeft; ?>px;
+		top:<?php print $WAhomeTop; ?>px;
+		width:<?php print $WAhomeWidth; ?>px;
+		height:<?php print $WAhomeHeight; ?>px;
+		background: <?php print $WAhomeBackgroundColor; ?>;
+		}	
+		
+.WAmain {
+		position: absolute;
+		display:block;
+		overflow: hidden;
+		left:<?php print $WAmainLeft; ?>px;
+		top:<?php print $WAmainTop; ?>px;
+		width:<?php print $WAmainWidth; ?>px;
+		height:<?php print $WAmainHeight; ?>px;
+		background: <?php print $WAmainBackgroundColor; ?>;
+		}	
+		
+.WAselect {
+		position: absolute;
+		display:block;
+		overflow: auto;
+		left:<?php print $WAselectLeft; ?>px;
+		top:<?php print $WAselectTop; ?>px;
+		width:<?php print $WAselectWidth; ?>px;
+		height:<?php print $WAselectHeight; ?>px;
+		background: <?php print $WAselectBackgroundColor; ?>;
+		}			
+
+.Footer {
+		position: absolute; 
+		display:block;
+		top:<?php print $FooterTop; ?>px; 
+		left:<?php print $FooterLeft; ?>px;
+		width:<?php print $FooterWidth; ?>px;
+		border:1px solid white;
+		background-color: white;
+		}
+
+/*									*/
+/*   Admin Photo Add				*/
+/*									*/
+
+.AdminPhotoAdd  {
+	position: absolute;
+	top: <?php print $phaAddtop; ?>px;
+	left: 5px;
+	width: 770px;
+	height: 400px;
+	overflow: hidden;
+	display: block;
+	background: white;
+	}
+
+.AdminPhotoAddInfo {
+	position: absolute;
+	top: 0px;
+	left: 55px;
+	width: 650px;
+	height: 400px;
+	padding: 1px 0px 0px 0px;
+	background: white; 
+	overflow: hidden;
+	/* border-top: 2px solid #9F7B25; */
+	}
+
+
+	.AdminPhotoAddInfo tr {
+	font: 500 12px Verdana, Helvetica, sans-serif;
+	color: #000000;
+	line-height: 35px;
+	background: 0;
+	}
+
+	
+.AdminPhotoAddDetailImage  {
+	position: absolute;
+	top: 0px;
+	left: 400px;
+	width: 360px;
+	height: <?php print $phaAddDetailImageHeight; ?>px;
+	overflow: hidden;
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	background: white;
+	}
+
+.AdminPhotoAddDetailImage:hover img  {
+	border: 1px inset black;
+	}
+	
+.AdminPhotoAddDetailImageButton  {
+	position: absolute;
+	top: <?php print $phaAddDetailImageHeight + 10; ?>px;
+	left: 400px;
+	width: 360px;
+	height: 35px;
+	overflow: hidden;
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	background: white;
+	}
+
+.AdminPhotoAddDetailImageButton button {
+	height: 25px;
+	width: 30px;
+ 	font: 500 9px Verdana, Helvetica, sans-serif;
+	line-height: 35px;
+	color: black;
+	}	
+	
+/*									*/
+/*   Admin Photo Main				*/
+/*									*/
+
+.AdminPhoto  {
+	position: absolute;
+	top: <?php print $phatop; ?>px;
+	left: 5px;
+	width: 770px;
+	height: 425px;
+	overflow: hidden;
+	display: block;
+	background: white;
+	}
+	
+/*									*/
+/*   Admin Photo Update				*/
+/*									*/
+	
+.photoUpdate  {
+	position: absolute;
+	top: <?php print $phaUpdatetop; ?>px;
+	left: 5px;
+	width: 770px;
+	height: <?php print $phaUpdateHeight; ?>px;
+	overflow: hidden;
+	display: block;
+	background: white; 
+	}	
+
+.photoUpdateControls {
+	position: relative;
+	top: 5px;
+	left: 5px;
+	width: 700px;
+	height: 35px;
+	display: block;
+	margin: 0px;
+	padding: 1px 0px 0px 0px;
+	background: white; 
+	}	
+	
+.photoUpdateControls td {
+	font: 500 12px Verdana, Helvetica, sans-serif;
+	color: 0;
+	margin: 0px;
+	}	
+	
+.photoUpdateControls select {
+	font: 500 12px Verdana, Helvetica, sans-serif;
+	color: 0;
+	margin: 0px;
+	}		
+	
+.photoUpdateList  {
+	position: absolute;
+	top: <?php print $phaUpdatelisttop; ?>px;
+	left: 5px;
+	width: 770px;
+	height: <?php print $phaUpdatelistHeight; ?>px;
+	display: block;
+	overflow: hide;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	background: white; 
+	}		
+
+.photoUpdateListList  {
+	position: absolute;
+	top: 0px;
+	left: 5px;
+	width: 770px;
+	height: <?php print $phaUpdatelistlistHeight; ?>px;
+	display: block;
+	overflow: auto;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	background: white; 
+	}	
+	
+.photoUpdateListButton  {
+	position: absolute;
+	top: <?php print $phaUpdatelistlistHeight; ?>px;
+	left: 5px;
+	width: 770px;
+	height: <?php print $phaUpdatelistButtonHeight; ?>px;
+	display: block;
+	overflow: hide;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	background: white; 
+	}		
+	
+.photoUpdateListInfo {
+	position: relative;
+	top: 0px;
+	left: 5px;
+	width: 400px;
+	height: <?php print $phaUpdatelistInfoHeight; ?>px;
+	padding: 1px 0px 0px 0px;
+	background: white; 
+	border-top: 2px solid #9F7B25;
+	}
+
+.photoUpdateListInfo td {
+	font: 500 12px Verdana, Helvetica, sans-serif;
+	color: #000000;
+	line-height: 15px;
+	background: 0;
+	}
+
+.photoUpdateListImage  {
+	position: relative;
+	top: 0px;
+	left: 5px;
+	width: 275px;
+	height: <?php print $phaUpdatelistInfoHeight; ?>px;
+	overflow: hidden;
+	background: white;
+	}
+
+/*									*/
+/*   Admin Photo Add Catagory				*/
+/*									*/
+
+.AdminPhotoAddCat  {
+	position: absolute;
+	top: <?php print $phaAddCattop; ?>px;
+	left: 15px;
+	width: 770px;
+	height: <?php print $phaAddCatHeight; ?>px;
+	overflow: hidden;
+	display: block;
+	background: white;
+	}
+
+.AdminPhotoAddCatInfo {
+	position: absolute;
+	top: 0px;
+	left: 15px;
+	width: 700px;
+	height: <?php print $phaAddCatInfoHeight; ?>px;
+	padding: 1px 0px 0px 0px;
+	background: white; 
+	overflow: hidden;
+	border-top: 2px solid #9F7B25;
+	}
+
+.AdminPhotoAddCatInfo td {
+	font: 500 9x Verdana, Helvetica, sans-serif;
+	color: #000000;
+	line-height: 35px;
+	background: 0;
+	}
+	
+.AdminPhotoAddCatInfo input {
+	font: 500 9x Verdana, Helvetica, sans-serif;
+	color: #000000;
+	line-height: 35px;
+	background: 0;
+	}	
+
+/*									*/
+/*   Admin Photo Main				*/
+/*									*/
+	
+.PublicPhoto  {
+	position: absolute;
+	top: <?php print $cmmtop; ?>px;
+	left: 5px;
+	width: 770px;
+	height: 450px;
+	overflow: hidden;
+	display: block;
+	background: white;
+	}
+	
+.PublicPhoto  td {
+	font: 500 12px Verdana, Helvetica, sans-serif;
+	}
+	
+.photoInfo {
+	position: relative;
+	top: 0px;
+	left: 5px;
+	width: 400px;
+	height: 140px;
+	padding: 1px 0px 0px 0px;
+	background: white; 
+	border-top: 2px solid #9F7B25;
+	}
+
+.photoInfo td {
+	font: 500 12px Verdana, Helvetica, sans-serif;
+	color: #000000;
+	line-height: 15px;
+	background: 0;
+	}
+	
+.photoFilter  {
+	position: relative;
+	top: 0px;
+	left: 0px;
+	width: 770px;
+	height: 30px;
+	overflow: hidden;
+	display: block;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	background: white;  
+	}		
+
+.photoFilter td,  input {
+	font: 500 11px Verdana, Helvetica, sans-serif;
+	line-height: 11px;
+	margin: 1px 0px 1px 0px;
+	padding: 0px 0px 0px 0px;
+	} 
+
+.photoImage  {
+	position: relative;
+	top: 0px;
+	left: 5px;
+	width: 200px;
+	height: 140px;
+	overflow: hidden;
+	background: white;
+	}
+
+.photoImage:hover img  {
+	border: 1px inset black;
+	}
+	
+.clientphotoMain  {
+	position: absolute;
+	top: <?php print $cphMaintop; ?>px;
+	left: 5px;
+	width: 770px;
+	height: <?php print $cphMainHeight; ?>px;
+	overflow: hidden;
+	display: block;
+	margin: 0 0 0 0;
+	padding: 0px 0px 0px 0px;
+	background: white;  
+	}
+	
+.clientphotoInfo {
+	position: relative;
+	top: 5px;
+	left: 5px;
+	width: 400px;
+	height: 120px;
+	margin: 0px;
+	padding: 1px 0px 0px 0px;
+	background: white; 
+	border-top: 2px solid #9F7B25;
+	}
+
+.clientphotoInfo td {
+	font: 500 12px Verdana, Helvetica, sans-serif;
+	color: 0;
+	line-height: 15px;
+	margin: 0px;
+	background: 0;
+	}
+
+.clientphotoBody  {
+	position: absolute;
+	top: 15px;
+	left: 5px;
+	width: 770px;
+	height: 180px;
+	margin: 0 0 0 0;
+	padding: 0px 0px 0px 0px;
+	background: white; 
+	}
+
+.clientphotoImage  {
+	position: relative;
+	top: 5px;
+	left: 5px;
+	width: 200px;
+	height: <?php print $cphImageheight; ?>px;
+	overflow: hidden;
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	background: white;
+	}
+
+.clientphotoImage:hover img  {
+	border: 1px inset black;
+	}
+
+.clientphotoFilter {
+	position: relative;
+	top: 50px;
+	left: 5px;
+	width: 650px;
+	height: 50px;
+	display: block;
+	margin: 0px;
+	padding: 1px 0px 0px 0px;
+	background: white; 
+	}	
+	
+.clientphotoFilter td {
+	font: 500 12px Verdana, Helvetica, sans-serif;
+	color: 0;
+	margin: 0px;
+	background: 0;
+	}	
+
+.clientphotoFilterButtons {
+	position: relative;
+	top: 55px;
+	left: 5px;
+	width: 650px;
+	height: 25px;
+	display: block;
+	margin: 0px;
+	padding: 1px 0px 0px 0px;
+	background: white; 
+	}	
+	
+.clientphotoSort {
+	position: relative;
+	top: 25px;
+	left: 5px;
+	width: 350px;
+	height: 100px;
+	display: block;
+	margin: 0px;
+	padding: 1px 0px 0px 0px;
+	background: white; 
+	}	
+	
+.clientphotoList  {
+	position: absolute;
+	top: <?php print $cphlisttop; ?>px;
+	left: 25px;
+	width: 770px;
+	height: <?php print $cphlistHeight; ?>px;
+	display: block;
+	overflow: hide;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	background: white; 
+	}		
+
+.clientphotoListList  {
+	position: absolute;
+	top: 0px;
+	left: 5px;
+	width: 770px;
+	height: <?php print $cphlistlistHeight; ?>px;
+	display: block;
+	overflow: auto;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	background: white; 
+	}			
+	
+.clientphotoListButton  {
+	position: absolute;
+	top: <?php print $cphlistlistHeight; ?>px;
+	left: 5px;
+	width: 770px;
+	height: <?php print $cphlistButtonHeight; ?>px;
+	display: block;
+	overflow: hide;
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	background: white; 
+	}	
+
+.PrivatePhotoMainLeft  {
+	position: absolute;
+	top: <?php print $cmmtop; ?>px;
+	left: 5px;
+	width: 500px;
+	height: 500px;
+	overflow: hide;
+	display: block;
+	background: white;
+	}
+	
+.PrivatePhotoMainLeft  td {
+	font: 500 12px Verdana, Helvetica, sans-serif;
+	}
+	
+.PrivatePhotoMainRight  {
+	position: absolute;
+	top: <?php print $cmmtop; ?>px;
+	left: 505px;
+	width: 250px;
+	height: 500px;
+	overflow: auto;
+	display: block;
+	background: white;
+	}
+	
+.PrivatePhotoMainRight  td {
+	font: 500 12px Verdana, Helvetica, sans-serif;
+	}
+/*									*/
+/*   Admin Music Main				*/
+/*									*/
+.PublicMusicMainLeft  {
+	position: absolute;
+	top: <?php print $cmmtop; ?>px;
+	left: 5px;
+	width: 250px;
+	height: 500px;
+	overflow: hide;
+	display: block;
+	background: white;
+	}
+	
+.PublicMusicMainLeft  td {
+	font: 500 12px Verdana, Helvetica, sans-serif;
+	}
+	
+.PublicMusicMainRight  {
+	position: absolute;
+	top: <?php print $cmmtop; ?>px;
+	left: 265px;
+	width: 505px;
+	height: 500px;
+	overflow: auto;
+	display: block;
+	background: white;
+	}
+	
+.PublicMusicMainRight  td {
+	font: 500 12px Verdana, Helvetica, sans-serif;
+	}
+
+.PublicMusic  {
+	position: absolute;
+	top: <?php print $cmmtop; ?>px;
+	left: 5px;
+	width: 770px;
+	height: 500px;
+	overflow: auto;
+	display: block;
+	background: white;
+	}
+	
+.PublicMusic  td {
+	font: 500 12px Verdana, Helvetica, sans-serif;
+	}
+	
+.clientmusicMain  {
+	position: absolute;
+	top: <?php print $cmusicMaintop; ?>px;
+	left: 10px;
+	width: 775px;
+	height: <?php print $cmusicMainHeight; ?>px;	
+	overflow: hidden;
+	display: block;
+	margin: 0 0 0 0;
+	padding: 0px 0px 0px 0px;
+	background: white;
+	}
+	
+.clientmusicUpLeft {
+	position: absolute;
+	top: 15px;
+	left: 0px;
+	width: 100px;
+	height: 100px;
+	overflow: hidden;
+	display: block;
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	background: white; 
+	}
+	
+.clientmusicUpRight {
+	position: absolute;
+	top: 15px;
+	left: 125px;
+	width: 550px;
+	height: 100px;
+	overflow: hidden;
+	display: block;
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	background: white; 
+	}
+
+.clientmusicUpRight td {
+	font: 500 12px Verdana, Helvetica, sans-serif;
+	color: 0;
+	line-height: 15px;
+	margin: 0px;
+	background: white;	
+	}
+
+.clientmusicMiddleListHdr {
+	position: absolute;
+	top: 120px;
+	left: 0px;
+	width: 770px;
+	height: 21px;
+	overflow: hidden; 
+	display: block; 
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	background: #70b1af; 
+	border: 1px solid #70b1af;
+	}
+	
+.clientmusicMiddleListHdr td {
+	font: 700 11px Helvetica, Arial,Geneva;
+	color: black; 
+	line-height: 13px; 
+	text-decoration: none;	
+	}
+	
+.clientmusicMiddleListHdr a {
+	font: 700 11px Helvetica, Arial,Geneva;
+	color: black; 
+	line-height: 13px; 
+	text-decoration: none;	
+	}	
+	
+.clientmusicMiddleListHdr a:hover   { 
+	color: #a23636;
+	font: 700 11px Helvetica, Arial,Geneva;
+	line-height: 13px; 
+	}
+	
+.clientmusicMiddleListList {
+	position: absolute;
+	top: 141px;
+	left: 0px;
+	width: 770px;
+	height: 200px;
+	overflow: auto; 
+	display: block; 
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	background: white; 
+	border: 1px solid #70b1af;
+	}	
+
+.clientmusicMiddleListList td {
+	font: 500 9px Helvetica, Arial,Geneva;
+	}	
+	
+.clientmusicMiddleListButton  {
+	position: absolute;
+	top: 350px; 
+	left: 0px;
+	width: 770px;
+	height: 35px;
+ 	display: block;
+	overflow: hide;  
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	background: white; 
+	}	
+
+.clientmusicLowerListLeft {
+	position: absolute;
+	top: 390px;
+	left: 70px;
+	width: 700px;
+	height: 160px;
+	overflow: auto; 
+	display: block;  
+	font: 500 9px Helvetica, Arial,Geneva;
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	background: white; 
+	border: 0px solid #5fab5f;
+	}	
+	
+.clientmusicLowerListLeft td select {
+	font: 500 11px Helvetica, Arial,Geneva;
+	width: 694px;
+	}	
+	
+.clientmusicLowerListButtonRight {
+	position: absolute;
+	top: 425px;
+	left: 15px;
+	width: 50px;
+	height: 100px;
+	overflow: hide; 
+	display: block; 
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	background: white; 
+	}
+
+.clientmusicLowerListButtonLeft {
+	position: absolute;
+	top: 560px;
+	left: 185px;
+	width: 350px;
+	height: 150px;
+	overflow: hide; 
+	display: block; 
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	background: white; 
+	}		
+
+/*                                                  */
+/* admin stuff                                      */
+/*                                                  */
+.clientmusicAdminList {
+	position: absolute;
+	top: 141px;
+	left: 0px;
+	width: 770px;
+	height: 400px;
+	overflow: auto; 
+	display: block; 
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	background: white; 
+	border: 1px solid #70b1af;
+	}	
+
+.clientmusicAdminList td {
+	font: 500 9px Helvetica, Arial,Geneva;
+	}	
+	
+.clientmusicAdminListButton  {
+	position: absolute;
+	top: 560px; 
+	left: 0px;
+	width: 770px;
+	height: 35px;
+ 	display: block;
+	overflow: hide;  
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	background: white; 
+	}	
+
+.edittagAdminList {
+	position: absolute;
+	top: 141px;
+	left: 0px;
+	width: 770px;
+	height: 200px;
+	overflow: auto; 
+	display: block; 
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	background: white; 
+	border: 1px solid #70b1af;
+	}	
+
+.edittagAdminList td {
+	font: 500 9px Helvetica, Arial,Geneva;
+	}	
+		
+.edittagAdminDetail  {
+	position: absolute;
+	top: 375px; 
+	left: 0px;
+	width: 770px;
+	height: 185px;
+ 	display: block;
+	overflow: hide;  
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	background: white; 
+	}		
+/*                                                  */
+/*  play play music                                 */
+/*                                                  */
+
+.playplaylistMain  {
+	position: absolute;
+	top: <?php print $cppmusicMaintop; ?>px;
+	left: 10px;
+	width: 775px;
+	height: <?php print $cppmusicMainHeight; ?>px;	
+	overflow: hidden;
+	display: block;
+	margin: 0 0 0 0;
+	padding: 0px 0px 0px 0px;
+	background: white;
+	}
+	
+.playplaylistTitleUpLeft {
+	position: absolute;
+	top: 25px;
+	left: 20px;
+	width: 175px;
+	height: 20px;
+	overflow: hidden;
+	display: block;
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	background: #022d68; 
+	border: 1px solid #022d68;
+	}
+	
+.playplaylistTitleUpLeft td {
+	font: 700 12px Helvetica, Arial,Geneva;
+	color: white;
+	line-height: 15px; 
+	text-decoration: none;	
+	}
+	
+.playplaylistUpLeft {
+	position: absolute;
+	top: 45px;
+	left: 20px;
+	width: 175px;
+	height: 250px;
+	overflow: hide;
+	display: block;
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	background: white; 
+	border: 1px solid #022d68;
+	}
+	
+.playplaylistUpLeft td select {
+	font: 500 11px Helvetica, Arial,Geneva;
+	width: 167px;
+	height: 240px;
+	}
+		
+.playplaylistTitleUpRight {
+	position: absolute;
+	top: 25px;
+	left: 275px;
+	width: 475px;
+	height: 20px;
+	overflow: hidden;
+	display: block;
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	background: #022d68; 
+	border: 1px solid #022d68;
+	}
+
+.playplaylistTitleUpRight td {
+	font: 700 12px Helvetica, Arial,Geneva;
+	color: white;
+	line-height: 15px; 
+	text-decoration: none;	
+	}	
+	
+.playplaylistUpRight {
+	position: absolute;
+	top: 45px;
+	left: 275px;
+	width: 475px;
+	height: 250px;
+	overflow: auto;
+	display: block;
+	font: 500 9px Helvetica, Arial,Geneva;
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	background: white; 
+	border: 1px solid #022d68;
+	}
+
+.playplaylistUpRight td {
+	font: 500 9px Helvetica, Arial,Geneva;
+	}
+	
+.playplayButtonLeft {
+	position: absolute;
+	top: 500px;
+	left: 20px;
+	width: 750px;
+	height: 150px;
+	overflow: hide; 
+	display: block; 
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	background: white; 
+	}	
+
+.playplayPlayerRight {
+	position: absolute;
+	top: 350px;
+	left: 250px;
+	width: 350px;
+	height: 150px;
+	overflow: hide; 
+	display: block; 
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	background: white; 
+	border: 0px solid blue;
+	}	
+
+/*                                                  */
+/*  update play music                               */
+/*                                                  */
+.updateplaylistMain  {
+	position: absolute;
+	top: <?php print $cppmusicMaintop; ?>px;
+	left: 10px;
+	width: 775px;
+	height: <?php print $cppmusicMainHeight; ?>px;	
+	overflow: hidden;
+	display: block;
+	margin: 0 0 0 0;
+	padding: 0px 0px 0px 0px;
+	background: white;
+	}
+	
+.updateplaylistTitleUpLeft {
+	position: absolute;
+	top: 25px;
+	left: 20px;
+	width: 175px;
+	height: 20px;
+	overflow: hidden;
+	display: block;
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	background: #5fab5f; 
+	border: 1px solid #5fab5f;
+	}
+
+.updateplaylistTitleUpLeft td {
+	font: 700 12px Helvetica, Arial,Geneva;
+	color: white;
+	line-height: 15px; 
+	text-decoration: none;	
+	}
+	
+.updateplaylistUpLeft {
+	position: absolute;
+	top: 45px;
+	left: 20px;
+	width: 175px;
+	height: 145px;
+	overflow: hide;
+	display: block;
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	background: white; 
+	border: 1px solid #5fab5f; 
+	}	
+
+.updateplaylistUpLeft td {
+	font: 500 11px Helvetica, Arial,Geneva;
+	}
+
+.updateplaylistUpLeft td select {
+	font: 500 11px Helvetica, Arial,Geneva;
+	width: 173px;
+	height: 141px;
+	}
+	
+.updateplayButtonRight {
+	position: absolute;
+	top: 65px;
+	left: 200px;
+	width: 65px;
+	height: 100px;
+	overflow: hide; 
+	display: block; 
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	background: white; 
+	}
+	
+.updateplaylistTitleUpRight {
+	position: absolute;
+	top: 25px;
+	left: 275px;
+	width: 475px;
+	height: 20px;
+	overflow: hidden;
+	display: block;
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	background: #5fab5f; 
+	border: 1px solid #5fab5f;  
+	}
+
+.updateplaylistTitleUpRight td {
+	font: 700 12px Helvetica, Arial,Geneva;
+	color: white;
+	line-height: 15px; 
+	text-decoration: none;	
+	}
+	
+.updateplaylistUpRight {
+	position: absolute;
+	top: 45px;
+	left: 275px;
+	width: 475px;
+	height: 145px;
+	overflow: hide;
+	display: block;
+	font: 500 9px Helvetica, Arial,Geneva;
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	background: white; 
+	border: 1px solid #5fab5f; 
+	}
+
+.updateplaylistUpRight td {
+	font: 500 11px Helvetica, Arial,Geneva;
+	}
+
+.updateplaylistUpRight td select {
+	font: 500 11px Helvetica, Arial,Geneva;
+	width: 472px;
+	height: 141px;
+	}
+	
+
+/* new start   */
+
+.updateplalistDBfilter {
+	position: absolute;
+	top: 215px;
+	left: 125px;
+	width: 550px;
+	height: 40px;
+	overflow: hidden;
+	display: block;
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	background: white; 
+	}
+
+.updateplalistDBfilter td {
+	font: 500 12px Verdana, Helvetica, sans-serif;
+	color: 0;
+	line-height: 15px;
+	margin: 0px;
+	background: white;	
+	}
+
+.updateplalistDBlistListHdr {
+	position: absolute;
+	top: 260px;
+	left: 0px;
+	width: 770px;
+	height: 21px;
+	overflow: hidden; 
+	display: block; 
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	background: #70b1af; 
+	border: 1px solid #70b1af;
+	}
+	
+.updateplalistDBlistListHdr td {
+	font: 700 11px Helvetica, Arial,Geneva;
+	color: black; 
+	line-height: 13px; 
+	text-decoration: none;	
+	}
+	
+.updateplalistDBlistListHdr a {
+	font: 700 11px Helvetica, Arial,Geneva;
+	color: black; 
+	line-height: 13px; 
+	text-decoration: none;	
+	}	
+	
+.updateplalistDBlistListHdr a:hover   { 
+	color: #a23636;
+	font: 700 11px Helvetica, Arial,Geneva;
+	line-height: 13px; 
+	}
+	
+.updateplalistDBlistListList {
+	position: absolute;
+	top: 281px;
+	left: 0px;
+	width: 770px;
+	height: 200px;
+	overflow: auto; 
+	display: block; 
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	background: white; 
+	border: 1px solid #70b1af;
+	}	
+
+.updateplalistDBlistListList td {
+	font: 500 9px Helvetica, Arial,Geneva;
+	}	
+	
+.updateplalistDBlistListButton  {
+	position: absolute;
+	top: 490px; 
+	left: 0px;
+	width: 770px;
+	height: 35px;
+ 	display: block;
+	overflow: hide;  
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+	background: white; 
+	}	
+	
+
+/*   new end */
+
+.updateplayButtonBottom {
+	position: absolute;
+	top: 545px;
+	left: 10px;
+	width: 750px;
+	height: 50px;
+	overflow: hide; 
+	display: block; 
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	background: white; 
+	}	
+
+.leftLink   { 
+		font: 700 11px Helvetica, Arial,Geneva;
+		color: black; 
+		line-height: 13px; 
+		text-decoration: none;
+		}
+				
+.leftLink:hover   { 
+		color: blue;
+		font: 700 11px Helvetica, Arial,Geneva;
+		line-height: 13px; 
+		text-decoration: underline;
+		}
+
+.leftLinkSelect   { 
+		font: 700 11px Helvetica, Arial,Geneva;
+		color: black; 
+		line-height: 13px; 
+		text-decoration: none;
+		background-color:#99CC99;
+		}
+				
+.leftLinkSelect:hover   { 
+		color: black;
+		font: 700 11px Helvetica, Arial,Geneva;
+		line-height: 13px; 
+		text-decoration: underline;
+		background-color:#99CC99;
+		}
+	
+.wbmedicalMain  {
+	position: absolute;
+	top: <?php print $wbmedicalMaintop; ?>px;
+	left: 15px;
+	width: 770px;
+	height: 325px;
+	overflow: hidden;
+	display: block;
+	margin: 0 0 0 0;
+	padding: 0px 0px 0px 0px;
+	background: white; 
+	}
+	
+		
+.smallTextLegend {
+		color: black;
+		font: 700 10px Verdana, Arial, Helvetica;
+		}	
+
+.smallText {
+		font: 500 12px Arial,Helvetica;
+		}
+		
+.verysmallText {
+		font: 500 9px Arial,Helvetica;
+		}	
+
+		
+.verysmallTextBlueMargin {
+		margin: 10px;
+		color: blue;
+		font: 500 9px Arial,Helvetica;
+		}	
+		
+.tblDetailsmTextOn  { 
+		color: black; 
+		font-size: 13px; 
+		line-height: 15px; 
+		font-family: Arial, Geneva; 
+		border-left:1px solid #CCFFFF;
+		border-right:1px solid #CCFFFF;
+		text-decoration:none;
+		background:#CCFFFF;
+		}
+				
+.tblDetailsmTextOff  { 
+		color: black; 
+		font-size: 13px; 
+		line-height: 15px; 
+		font-family: Arial, Geneva; 
+		border-left:1px solid white;
+		border-right:1px solid white;
+		text-decoration: none;
+		background: white;
+		}		
+
+.mailLink   { 
+		font: 700 13px Helvetica, Arial,Geneva;
+		color: blue; 
+		line-height: 15px; 
+		text-decoration: none;
+		}
+				
+.mailLink:hover   { 
+		color: red;
+		font: 700 13px Helvetica, Arial,Geneva;
+		line-height: 15px; 
+		text-decoration: none;
+		}		
+		
+.Header {
+		font: 700 25px Arial,Helvetica;
+		}
+		
+.HeaderMed {
+		font: 700 15px Arial,Helvetica;
+		}
+			
+.regText {
+		font: 500 15px Arial,Helvetica;
+		}
+
+.regTextMed {
+		font: 500 14px Arial,Helvetica;
+		line-height: 15px;
+		color: #1b5f5d;
+		}
+
+.regTextsmall {
+		font: 500 11px Arial,Helvetica;
+		}
+
+.regTextsmallBlockOn {
+		font: 500 11px Arial,Helvetica;
+		background = "#ccffff";
+		}
+
+.regTextsmallBlockOff {
+		font: 500 11px Arial,Helvetica;
+		background = white;
+		}
+		
+.regTextBold {
+		font: 700 15px Arial,Helvetica;
+		}	
+		
+.regTextInset {
+		font: 500 15px Arial,Helvetica;
+		border-style:inset;
+		background:#e09898;
+		}
+						
+.middlecontent {
+		height:275px;
+		background-color: white;
+		border:1px solid white;
+		}
+
+.outerBorder {
+		border-top:0px solid #8da98d;
+		border-left:1px solid #8da98d;
+		border-right:1px solid #8da98d;
+		border-bottom:1px solid #8da98d;
+		}	
+
+.topicBorder {
+		border: 1px; 
+		font: 700 15px Arial,Helvetica;
+		color: black;
+		text-align: left;
+		background: #ccccff;
+		}					
+
+.topicHeader {
+		border: 1px; 
+		font: 700 14px Arial,Helvetica;
+		color: black;
+		text-align: left;
+		border-bottom:2px solid #98d9bf;
+		}
+.topicHeaderFull {
+		border: 0px; 
+		font: 700 14px Arial,Helvetica;
+		color: black;
+		text-align: left;
+		background: #ffffff;
+		border-bottom:4px solid #98d9bf;
+		}
+
+.topicHeaderNoline {
+		border: 0px; 
+		font: italic 700 14px  Arial,Helvetica;
+		color: #8da98d;
+		text-align: left;
+		padding-left:25px;
+		background: white;
+		}
+				
+.leftcolumn {
+		position: absolute;
+		font: 500 12px  Arial,Geneva;
+		line-height: 16px; 
+		left:10px;
+		top:150px;
+		width:420px;
+		height:400px;
+		background: white;
+		}
+
+.rightcolumn {
+		position: absolute;
+		left:300px;
+		top:150px;
+		width:420px;
+		height:400px;
+		background: white;
+		}		
+
+.msgText {
+		font: 500 20px Arial,Helvetica;
+		}
+
+.msgBox {
+		position: absolute;
+		left:0px;
+		top:30px;
+		width:400px;
+		height:95px;
+		border-style:inset;
+		background:#ccf3e4;
+		}			
+
+.contactusTopLeft {
+		position: absolute;
+		font: 500 11px  Arial,Geneva;
+		line-height: 12px; 
+		left:10px;
+		top:70px;
+		width:350px;
+		height:250px;
+		background: white;
+		}
+		
+.contactusTopRight {
+		position: absolute;
+		font: 500 11px  Arial,Geneva;
+		line-height: 12px; 
+		left:360px;
+		top:70px;
+		width:350px;
+		height:250px;
+		background: white;
+		}
+
+.contactusBottomLeft {
+		position: absolute;
+		left:10px;
+		top:320px;
+		width:350px;
+		height:250px;
+		background: white;
+		}		
+
+.contactusBottomRight {
+		position: absolute;
+		left:360px;
+		top:320px;
+		width:350px;
+		height:250px;
+		background: white;
+		}		
+
+.NewsTop {
+		position: absolute;
+		font: 500 11px  Arial,Geneva;
+		line-height: 12px; 
+		left:10px;
+		top:25px;
+		width:750px;
+		height:150px;
+		background: white;
+		}
+		
+.NewsDetail {
+		position: absolute;
+		left:10px;
+		top:200px;
+		width:750px;
+		height:700px;
+		background: white;
+		}			
+		
+.tickerAreaclass	{
+	position: relative;
+	left: 25px;
+	border: 0px solid black;
+	padding: 3px;
+	width: 740px;
+	height: 250px;
+	}
+		
+.tickerclass	{
+	border: 1px solid black;
+	padding: 3px;
+	background-color: #F3F3F3;
+	margin-bottom: 10px;
+	width: 690px;
+	}
+
+.tickerclass a	{
+	text-decoration: none;
+	color: red;
+	}
+		
+.outerBorderTitleCS {
+		color: black;
+		font: 700 11px Arial,Helvetica;
+		text-align: left;
+		border-top:0px solid #C6D7C6;
+		border-left:1px solid #C6D7C6;
+		border-right:1px solid #C6D7C6;
+		border-bottom:0px solid #C6D7C6;
+		background: #C6D7C6;
+}	
+
+.outerBorderCS {
+		border-top:0px solid #C6D7C6;
+		border-left:1px solid #C6D7C6;
+		border-right:1px solid #C6D7C6;
+		border-bottom:1px solid #C6D7C6;
+}
+
+.blueLink   { 
+		font: 500 11px Arial,Geneva;
+		color: blue; 
+		line-height: 12px; 
+		text-decoration: none;
+		}
+
+.blueLink:hover   { 
+		color: #339900; 
+		color: blue;
+		font: 700 11px Arial,Geneva;
+		line-height: 12px; 
+		text-decoration: underline;
+		}
+		
+		
+.bigBlueLink   { 
+		font: 700 15px Arial,Geneva;
+		color: blue; 
+		line-height: 15px; 
+		text-decoration: none;
+		}
+		
+.bigBlueLink:hover   { 
+		font: 700 15px Arial,Geneva;
+		color: blue; 
+		line-height: 15px; 
+		text-decoration: underline;
+		}		
+
+.selectLinksArea {
+		position: absolute;
+		color: black;
+		left:5px;
+		top:0px;
+		width:250px;
+		height:200px;
+		background: white;
+		}
+		
+.selectLinks {
+		color: blue;
+		text-decoration: underline;
+		background: white;
+		}	
+		
+.selectLinks:hover {
+		color: blue;
+		text-decoration: none;
+		background: white;
+		}		
+		
+/* System Info */
+.firstColumn {
+		position: absolute;
+		top:50px;
+		height:300px;
+		width:206.66666666667px;
+		left:15px;
+		font: 500 12px  Arial,Geneva;
+		line-height:16px;
+		Margin: 0px 0px 0px 0px;
+		padding: 0px 0px 0px 0px;
+		background: white;
+		}
+		
+.secondColumn {
+		position: absolute;
+		top:50px;
+		height:300px;
+		width:206.66666666667px;
+		left:206.66666666667px;
+		font: 500 12px  Arial,Geneva;
+		line-height:16px;
+		Margin: 0px 0px 0px 0px;
+		padding: 0px 0px 0px 0px;
+		background: white;
+		}
+
+.thirdColumn {
+		position: absolute;
+		top:50px;
+		height:300px;
+		width:206.66666666667px;
+		left:413.33333333333px;
+		font: 500 12px  Arial,Geneva;
+		line-height:16px;
+		Margin: 0px 0px 0px 0px;
+		padding: 0px 0px 0px 0px;
+		background: white;
+		}		
+.lowerArea {
+		position: absolute;
+		top:350px;
+		height:400px;
+		width:605px;
+		left:15px;
+		font: 500 12px  Arial,Geneva;
+		line-height:16px;
+		Margin: 0px 0px 0px 0px;
+		padding: 0px 0px 0px 0px;
+		background: white;
+		}	
+		
+/* crucible Info */
+.Topcrucible {
+		position: absolute;
+		font: 500 11px  Arial,Geneva;
+		line-height: 12px; 
+		left:10px;
+		top:25px;
+		width:750px;
+		height:90px;
+		overflow: hidden;
+		background: white;
+		}
+		
+.firstColumncrucible {
+		position: absolute;
+		top:145px;
+		height:300px;
+		width:240px;
+		left:15px;
+		font: 500 12px  Arial,Geneva;
+		line-height:16px;
+		Margin: 0px 0px 0px 0px;
+		padding: 0px 0px 0px 0px;
+		background: white;
+		}
+		
+.secondColumncrucible {
+		position: absolute;
+		top:145px;
+		height:300px;
+		width:240px;
+		left:240px;
+		font: 500 12px  Arial,Geneva;
+		line-height:16px;
+		Margin: 0px 0px 0px 0px;
+		padding: 0px 0px 0px 0px;
+		background: white;
+		}
+
+.thirdColumncrucible {
+		position: absolute;
+		top:145px;
+		height:300px;
+		width:240px;
+		left:480px;
+		font: 500 12px  Arial,Geneva;
+		line-height:16px;
+		Margin: 0px 0px 0px 0px;
+		padding: 0px 0px 0px 0px;
+		background: white;
+		}		
+		
+.lowerAreacrucible {
+		position: absolute;
+		top:445px;
+		height:200px;
+		width:720px;
+		left:15px;
+		font: 500 12px  Arial,Geneva;
+		line-height:16px;
+		Margin: 0px 0px 0px 0px;
+		padding: 0px 0px 0px 0px;
+		background: white;
+		}				
+		
+.Southwind  {
+	position: absolute;
+	top: <?php print $cmmtop; ?>px;
+	left: 5px;
+	width: 750px;
+    height: 500px;  
+	overflow: hide;
+	display: block;
+	background: white;
+	}
+	
+.Southwind  td {
+	font: 500 12px Verdana, Helvetica, sans-serif;
+	}
+	
+.SouthwindMainRight  {
+	position: absolute;
+	top: <?php print $cmmtop; ?>px;
+	left: 405px;
+	width: 350px;
+	height: 500px;
+	overflow: auto;
+	display: block;
+	background: white;
+	}
+	
+.SouthwindMainRight  td {
+	font: 500 12px Verdana, Helvetica, sans-serif;
+	}
+

@@ -1,0 +1,33 @@
+<?php
+
+$CartNbr = 0;
+
+$_SESSION['Line1']="S,L,3,1";
+
+$Line1 = explode(",", $_SESSION['Line1']);
+
+$CartType = $Line1[0];
+$CartSize = $Line1[1];
+$CartFabric = $FabricColorChartTokens[$Line1[2]] ['title'];
+$CartQty = $Line[3];
+
+
+//----------------------------------------------------------------------------------------------------------
+// Set Display variables
+//----------------------------------------------------------------------------------------------------------
+$DisplayMsg1 = "<p>The Current Shopping Cart purchased a Type: $CartType with a size: $CartSize for Fabric: $CartFabric for $CartQty items.  See Summary Bellow</p>";
+
+
+?>
+
+<br>
+
+
+<div class="marginLeft20">
+<table width="90%" class="regTextsmall">
+	<tr>
+		<td align="left" valign="top" class="regText"><?php print $DisplayMsg1; ?></td>
+	</tr>
+</table>
+
+</div>

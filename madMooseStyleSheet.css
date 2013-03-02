@@ -1,0 +1,778 @@
+#allcontent {
+		background-color: white;
+		width:<?php print $allcontentWidth; ?>px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+		margin-left: auto;
+		margin-right: auto;
+		}
+
+.Banner {
+		position: absolute;
+		overflow:hidden;
+		display:block;
+		left:0px;
+		top:0px;
+		z-index: +1;
+		height:<?php print $BannerHeight; ?>px;
+		width:<?php print $BannerWidth; ?>px;
+		background: <?php print $BannerBackgroundColor; ?>;
+		}
+		
+.BannerText {
+		position: absolute;
+		top:<?php print $BannerTextHeight; ?>px;
+		left:<?php print $BannerTextLeft; ?>px;
+		width:<?php print $BannerTextWidth; ?>px;
+		z-index: +3;
+		}
+		
+.MainNav {
+		position: absolute;
+		display: inline;
+		left:0px;
+		top:<?php print $MainNavTop; ?>px;
+		height:<?php print $MainNavHeight; ?>px;
+		width:<?php print $MainNavWidth; ?>px; 
+		background: <?php print $MainNavBackgroundColor; ?>;
+		}
+
+.MainNavTabsUpper {
+		position: absolute;
+		top:0px;
+		margin:0;
+		padding:0;
+		height:<?php print $MainNavTabUpperHeight; ?>px;
+		line-height:<?php print $MainNavTabUpperHeight - 2; ?>px;
+		width:<?php print $MainNavWidth; ?>px; 
+		border-top:0px <?php print $MainNavTabUpperColor; ?>;
+		border-left:2px white;
+		border-right:0px <?php print $MainNavTabUpperColor; ?>;
+		border-bottom:0px <?php print $MainNavTabUpperColor; ?>;
+		}
+
+.MainNavTabsUpperCell {
+		color: <?php print $MainNavTabUpperTextColor; ?>; 
+		font: 700 11px verdana,sans-serif; 
+		vertical-align: middle;
+		text-align: center;
+		border-top:0px <?php print $MainNavTabUpperColor; ?>;
+		border-left:1px white;
+		border-right:0px <?php print $MainNavTabUpperColor; ?>;
+		border-bottom:0px <?php print $MainNavTabUpperColor; ?>;
+		text-decoration: none;
+		background: <?php print $MainNavTabUpperColor; ?>;
+		}		
+
+.MainNavTabsUpperCell:hover {
+		color: <?php print $MainNavTabUpperTextHoverColor; ?>; 
+		font: 700 11px verdana,sans-serif; 
+		vertical-align: middle;
+		text-align: center;
+		border-top:0px <?php print $MainNavTabUpperColor; ?>;
+		border-left:1px white;
+		border-right:0px <?php print $MainNavTabUpperColor; ?>;
+		border-bottom:0px <?php print $MainNavTabUpperColor; ?>;
+		text-decoration: none;
+		background: <?php print $MainNavTabUpperColor; ?>;
+		}		
+
+.MainNavTabsUpperCellSelect {
+		color: <?php print $MainNavTabUpperCellSelectTextColor; ?>; 
+		font: 700 11px verdana,sans-serif; 
+		vertical-align: middle;
+		text-align: center;
+		border-top:0px <?php print $MainNavTabUpperColor; ?>;
+		border-left:1px white;
+		border-right:0px <?php print $MainNavTabUpperColor; ?>;
+		border-bottom:0px <?php print $MainNavTabUpperColor; ?>;
+		text-decoration: none;
+		background: <?php print $MainNavTabUpperCellSelectColor; ?>;
+		}	
+		
+.MainNavLower {
+		position: absolute;
+		top:<?php print $ManinNavLowerTop; ?>px;
+		left:0px;
+		margin:0;
+		padding:0;
+		line-height:<?php print $ManinNavLowerHeight; ?>px;
+		height:<?php print $ManinNavLowerHeight; ?>px;
+		width:<?php print $MainNavWidth; ?>px; 
+		background: <?php print $ManinNavLowerColor; ?>;
+		}
+
+.LeftNav {
+		position: absolute;
+		left:0px;
+		top:<?php print $LeftNavTop; ?>px;
+		width:<?php print $LeftNavWidth; ?>px;
+		height:<?php print $LeftNavHeight; ?>px;
+		background:<?php print $LeftNavBackgroundColor; ?>;
+		}
+		
+.supportedCauses {
+		position: absolute;
+		left:0px;
+		top:<?php print $supportedCausesTop; ?>px;
+		width:<?php print $supportedCausesWidth; ?>px;
+		height:<?php print $supportedCausesHeight; ?>px;
+		background:<?php print $supportedCausesBackgroundColor; ?>;
+		}			
+		
+#LeftNav-side-nav {
+	list-style: none;
+	margin: 0;
+	padding: 0;  
+}
+
+
+#LeftNav-side-nav li {
+	font: 500 12px Verdana, Arial, Helvetica, sans-serif; 
+	margin: 0;
+	padding: 0;  
+	line-height:15px;
+	border-top: 0px  solid  #c6d0d0;
+	/* IE/Win gets upset if there is no bottom border... Go figure. */
+	border-bottom: 1px  solid #c6d0d0;
+	background-color: #468e8b;
+}	
+
+#LeftNav-side-nav li strong {
+	font: 800 13px Verdana, Arial, Helvetica, sans-serif;
+	display: block;
+	line-height:20px;
+	border: 0px solid  #c6d0d0;
+	border-bottom: 1px  solid #c6d0d0;
+	color: #c6d0d0;
+	background-color: #1b5f5d;
+}	
+
+#LeftNav-side-nav li strong  a {
+        font: 500 12px Verdana, Arial, Helvetica, sans-serif;
+        display: block;
+        line-height:20px;
+        background-color: white;
+        border-bottom: 0px solid  white;
+        color: black;
+		padding: 0 6;
+}       
+
+#LeftNav-side-nav a {
+
+	color: black;
+	display: block;
+	text-decoration: none;
+	margin: 0;
+	padding: 4 6;
+
+}
+
+#LeftNav-side-nav a:hover {
+	background-color: #70b1af;
+	color: blue;
+}
+
+#LeftNav-side-nav strong a {
+	font-weight: normal;
+	color: black; !important;
+	background-color: white;
+	margin: 0;
+	padding: 2 6;
+
+}
+
+#LeftNav-side-nav strong a:hover {
+	background-color:  white; !important;
+}
+
+.Workarea {
+		position: absolute;
+		overflow: hidden;
+		left:<?php print $WALeft; ?>px;
+		top:<?php print $WATop; ?>px;
+		width:<?php print $WAWidth; ?>px;
+		height:<?php print $WAHeight; ?>px;
+		background: <?php print $WABackgroundColor; ?>;
+		}
+
+.WAbreadCrumb {
+		position: absolute;
+		display:block;
+		overflow: hidden;
+		left:<?php print $WAbreadcrumbLeft; ?>px;
+		top:<?php print $WAbreadcrumbTop; ?>px;
+		width:<?php print $WAbreadcrumbWidth; ?>px;
+		height:<?php print $WAbreadcrumbHeight; ?>px;
+		background: <?php print $WAbreadcrumbBackgroundColor; ?>;
+		}
+	
+.breadCrumb   { 
+		font: <?php print $WAbreadcrumbTextWeight; ?> <?php print $WAbreadcrumbTextFontSize; ?>px <?php print $WAbreadcrumbTextFonts; ?>; 
+		color: <?php print $WAbreadcrumbTextColor; ?>;
+		line-height: <?php print $WAbreadcrumbTextLineHeight; ?>px;
+		text-decoration: none;
+		}
+				
+.breadCrumb:hover   { 
+		color: <?php print $WAbreadcrumbTextColoHover; ?>;
+		font: <?php print $WAbreadcrumbTextWeight; ?> <?php print $WAbreadcrumbTextFontSize; ?>px <?php print $WAbreadcrumbTextFonts; ?>; 
+		line-height: <?php print $WAbreadcrumbTextLineHeight; ?>px; 
+		text-decoration: none;
+		}
+
+.WAtitleBorder {
+		position: absolute;
+		display:block;
+		overflow: hidden;
+		top:<?php print $WAtitleborderTop; ?>px;
+		left:<?php print $WAtitleborderLeft; ?>px;
+		width:<?php print $WAtitleborderWidth; ?>px;
+		height:<?php print $WAtitleborderHeight; ?>px;
+		background: <?php print $WAtitleborderBackgroundColor; ?>;
+		}
+
+.titleBorder {
+		color:<?php print $WAtitleborderTextColor; ?>;
+		font: <?php print $WAtitleborderTextWeight; ?> <?php print $WAtitleborderTextFontSize; ?>px <?php print $WAtitleborderTextFonts; ?>;
+		text-align: <?php print $WAtitleborderTextAlign; ?>;
+		font-style: <?php print $WAtitleborderTextLineStyle; ?>;
+		border-bottom:<?php print $WAtitleborderBottomSize; ?>px solid <?php print $WAtitleborderBottomColor; ?>;
+		}
+
+.WAhome {
+		position: absolute;
+		display:block;
+		overflow: hidden;
+		left:<?php print $WAhomeLeft; ?>px;
+		top:<?php print $WAhomeTop; ?>px;
+		width:<?php print $WAhomeWidth; ?>px;
+		height:<?php print $WAhomeHeight; ?>px;
+		background: <?php print $WAhomeBackgroundColor; ?>;
+		}	
+		
+.WAmain {
+		position: absolute;
+		display:block;
+		overflow: hidden;
+		left:<?php print $WAmainLeft; ?>px;
+		top:<?php print $WAmainTop; ?>px;
+		width:<?php print $WAmainWidth; ?>px;
+		height:<?php print $WAmainHeight; ?>px;
+		background: <?php print $WAmainBackgroundColor; ?>;
+		}	
+		
+.WAselect {
+		position: absolute;
+		display:block;
+		overflow: auto;
+		left:<?php print $WAselectLeft; ?>px;
+		top:<?php print $WAselectTop; ?>px;
+		width:<?php print $WAselectWidth; ?>px;
+		height:<?php print $WAselectHeight; ?>px;
+		background: <?php print $WAselectBackgroundColor; ?>;
+		}			
+
+.Footer {
+		position: absolute; 
+		display:block;
+		top:<?php print $FooterTop; ?>px; 
+		left:<?php print $FooterLeft; ?>px;
+		width:<?php print $FooterWidth; ?>px;
+		border:1px solid white;
+		background-color: white;
+		}
+
+.leftLink   { 
+		font: 700 11px Helvetica, Arial,Geneva;
+		color: black; 
+		line-height: 13px; 
+		text-decoration: none;
+		}
+				
+.leftLink:hover   { 
+		color: blue;
+		font: 700 11px Helvetica, Arial,Geneva;
+		line-height: 13px; 
+		text-decoration: underline;
+		}
+
+.leftLinkSelect   { 
+		font: 700 11px Helvetica, Arial,Geneva;
+		color: black; 
+		line-height: 13px; 
+		text-decoration: none;
+		background-color:#99CC99;
+		}
+				
+.leftLinkSelect:hover   { 
+		color: black;
+		font: 700 11px Helvetica, Arial,Geneva;
+		line-height: 13px; 
+		text-decoration: underline;
+		background-color:#99CC99;
+		}
+	
+.smallTextLegend {
+		color: black;
+		font: 700 10px Verdana, Arial, Helvetica;
+		}	
+
+.smallText {
+		font: 500 12px Arial,Helvetica;
+		}
+		
+.verysmallText {
+		font: 500 9px Arial,Helvetica;
+		}	
+
+		
+.verysmallTextBlueMargin {
+		margin: 10px;
+		color: blue;
+		font: 500 9px Arial,Helvetica;
+		}	
+		
+.tblDetailsmTextOn  { 
+		color: black; 
+		font-size: 13px; 
+		line-height: 15px; 
+		font-family: Arial, Geneva; 
+		border-left:1px solid #CCFFFF;
+		border-right:1px solid #CCFFFF;
+		text-decoration:none;
+		background:#CCFFFF;
+		}
+				
+.tblDetailsmTextOff  { 
+		color: black; 
+		font-size: 13px; 
+		line-height: 15px; 
+		font-family: Arial, Geneva; 
+		border-left:1px solid white;
+		border-right:1px solid white;
+		text-decoration: none;
+		background: white;
+		}		
+
+.mailLink   { 
+		font: 700 13px Helvetica, Arial,Geneva;
+		color: blue; 
+		line-height: 15px; 
+		text-decoration: none;
+		}
+				
+.mailLink:hover   { 
+		color: red;
+		font: 700 13px Helvetica, Arial,Geneva;
+		line-height: 15px; 
+		text-decoration: none;
+		}		
+		
+.Header {
+		font: 700 25px Arial,Helvetica;
+		}
+		
+.HeaderMed {
+		font: 700 15px Arial,Helvetica;
+		}
+		
+.madMooseHeader {
+        border: 0px; 
+		font: italic 700 25px  Arial,Helvetica;
+		color: black;
+		text-align: left;
+		padding-left:25px;
+		background: white;
+		}
+
+.marginLeft20 {
+		position: relative;
+		display:block;
+		overflow: hidden;
+		left: 20px;
+		}	
+
+.madMooseItemText {
+		position: absolute;
+		display:block;
+        top:0px;
+		width:<?php print (($WAhomeWidth/2) - 170); ?>px;
+		height:490px;
+        overflow: hidden;
+        background: white;
+		left: 20px;
+		}	
+
+.madMooseItemText p#err {
+		text-align:left;
+        color:red;
+        font: italic 500 15px  Arial,Helvetica;
+		}	
+        
+
+.madMooseItemText p#msg {
+		text-align:left;
+        color:blue;
+        font: 500 13px  Arial,Helvetica;
+		}	
+
+.madMooseItemList {
+		position: absolute;
+		display:block;
+        top:0px;
+		width:<?php print ($WAhomeWidth/2) + 130; ?>px;
+		height:490px;
+        overflow: auto;
+        background: white;
+		left: <?php print (($WAhomeWidth/2) - 140); ?>px;
+		}	
+
+.madMooseItemListBottom {
+		position: absolute;
+		display:block;
+        top:490px;
+		width:<?php print $WAhomeWidth; ?>px;
+		height:40px;
+        overflow: hidden;
+        background: white;
+		left: 20px;
+		}	
+        
+        
+.marginLeft40 {
+		position: relative;
+		display:block;
+		overflow: hidden;
+		left: 40px;
+		}	
+
+.regText {
+		font: 500 15px Arial,Helvetica;
+		}
+
+.regTextItalicBoldNoUnderline {
+		font: italic 700 15px Arial,Helvetica;
+        color:blue;
+        text-decoration: none;
+		}
+
+.regTextmedium {
+		font: 500 12px Arial,Helvetica;
+		}
+
+.regTextmediumBold {
+		font: 700 12px Arial,Helvetica;
+		}
+
+.regTextmediumBoldRed {
+		font: 700 12px Arial,Helvetica;
+        color:red;
+		}
+
+
+       
+.regTextsmall {
+		font: 500 11px Arial,Helvetica;
+		}
+
+.regTextsmallBold {
+		font: 700 11px Arial,Helvetica;
+		}
+
+.regTextsmallTableBorder {
+		font: 500 11px Arial,Helvetica;
+ /*       border-style:groove;
+        border-color:green;
+        border-top:1px solid grey;
+		border-left:1px solid grey;
+		border-right:1px solid grey;
+		border-bottom:1px solid grey;
+        */
+		}
+
+.regTextsmallBlockOn {
+		font: 500 11px Arial,Helvetica;
+		background = "#ccffff";
+		}
+
+.regTextsmallBlockOff {
+		font: 500 11px Arial,Helvetica;
+		background = white;
+		}
+		
+.regTextBold {
+		font: 700 15px Arial,Helvetica;
+		}	
+		
+.regTextInset {
+		font: 500 15px Arial,Helvetica;
+		border-style:inset;
+		background:#e09898;
+		}
+
+.largeText {
+        border: 0px; 
+		font: italic 700 25px  Arial,Helvetica;
+        text-decoration: none;
+        color: black;
+		}        
+        
+.largeTextRed {
+        border: 0px; 
+		font: italic 700 25px  Arial,Helvetica;
+        text-decoration: none;
+        color: red;
+		text-align: left;
+		}         
+
+.regTextLarge {
+        border: 0px; 
+		font: small-caps 600 15px arial;
+        text-decoration: none;
+        color: black;
+
+		}        
+        
+.middlecontent {
+		height:275px;
+		background-color: white;
+		border:1px solid white;
+		}
+
+.outerBorder {
+		border-top:0px solid #8da98d;
+		border-left:1px solid #8da98d;
+		border-right:1px solid #8da98d;
+		border-bottom:1px solid #8da98d;
+		}	
+
+.topicBorder {
+		border: 1px; 
+		font: 700 15px Arial,Helvetica;
+		color: black;
+		text-align: left;
+		background: #ccccff;
+		}					
+
+.topicHeader {
+		border: 1px; 
+		font: 700 14px Arial,Helvetica;
+		color: black;
+		text-align: left;
+		border-bottom:2px solid #98d9bf;
+		}
+.topicHeaderFull {
+		border: 0px; 
+		font: 700 14px Arial,Helvetica;
+		color: black;
+		text-align: left;
+		background: #ffffff;
+		border-bottom:4px solid #98d9bf;
+		}
+
+.topicHeaderNoline {
+		border: 0px; 
+		font: italic 700 14px  Arial,Helvetica;
+		color: #8da98d;
+		text-align: left;
+		padding-left:25px;
+		background: white;
+		}
+				
+.leftcolumn {
+		position: absolute;
+		font: 500 12px  Arial,Geneva;
+		line-height: 16px; 
+		left:10px;
+		top:150px;
+		width:420px;
+		height:400px;
+		background: white;
+		}
+
+.rightcolumn {
+		position: absolute;
+		left:300px;
+		top:150px;
+		width:420px;
+		height:400px;
+		background: white;
+		}		
+
+.msgText {
+		font: 500 20px Arial,Helvetica;
+		}
+
+.msgBox {
+		position: absolute;
+		left:0px;
+		top:30px;
+		width:400px;
+		height:95px;
+		border-style:inset;
+		background:#ccf3e4;
+		}			
+
+.contactusTopLeft {
+		position: absolute;
+		font: 500 11px  Arial,Geneva;
+		line-height: 12px; 
+		left:10px;
+		top:70px;
+		width:350px;
+		height:250px;
+		background: white;
+		}
+		
+.contactusTopRight {
+		position: absolute;
+		font: 500 11px  Arial,Geneva;
+		line-height: 12px; 
+		left:360px;
+		top:70px;
+		width:350px;
+		height:250px;
+		background: white;
+		}
+
+.contactusBottomLeft {
+		position: absolute;
+		left:10px;
+		top:320px;
+		width:350px;
+		height:250px;
+		background: white;
+		}		
+
+.contactusBottomRight {
+		position: absolute;
+		left:360px;
+		top:320px;
+		width:350px;
+		height:250px;
+		background: white;
+		}		
+
+.NewsTop {
+		position: absolute;
+		font: 500 11px  Arial,Geneva;
+		line-height: 12px; 
+		left:10px;
+		top:25px;
+		width:750px;
+		height:150px;
+		background: white;
+		}
+		
+.NewsDetail {
+		position: absolute;
+		left:10px;
+		top:200px;
+		width:750px;
+		height:700px;
+		background: white;
+		}			
+		
+.tickerAreaclass	{
+	position: relative;
+	left: 25px;
+	border: 0px solid black;
+	padding: 3px;
+	width: 740px;
+	height: 250px;
+	}
+		
+.tickerclass	{
+	border: 1px solid black;
+	padding: 3px;
+	background-color: #F3F3F3;
+	margin-bottom: 10px;
+	width: 690px;
+	}
+
+.tickerclass a	{
+	text-decoration: none;
+	color: red;
+	}
+		
+.outerBorderTitleCS {
+		color: black;
+		font: 700 11px Arial,Helvetica;
+		text-align: left;
+		border-top:0px solid #C6D7C6;
+		border-left:1px solid #C6D7C6;
+		border-right:1px solid #C6D7C6;
+		border-bottom:0px solid #C6D7C6;
+		background: #C6D7C6;
+}	
+
+.outerBorderCS {
+		border-top:0px solid #C6D7C6;
+		border-left:1px solid #C6D7C6;
+		border-right:1px solid #C6D7C6;
+		border-bottom:1px solid #C6D7C6;
+}
+
+.blueLink   { 
+		font: 500 11px Arial,Geneva;
+		color: blue; 
+		line-height: 12px; 
+		text-decoration: none;
+		}
+
+.blueLink:hover   { 
+		color: #339900; 
+		color: blue;
+		font: 700 11px Arial,Geneva;
+		line-height: 12px; 
+		text-decoration: underline;
+		}
+		
+		
+.bigBlueLink   { 
+		font: 700 15px Arial,Geneva;
+		color: blue; 
+		line-height: 15px; 
+		text-decoration: none;
+		}
+		
+.bigBlueLink:hover   { 
+		font: 700 15px Arial,Geneva;
+		color: blue; 
+		line-height: 15px; 
+		text-decoration: underline;
+		}		
+
+.selectLinksArea {
+		position: absolute;
+		color: black;
+		left:5px;
+		top:0px;
+		width:250px;
+		height:200px;
+		background: white;
+		}
+		
+.selectLinks {
+		color: blue;
+		text-decoration: underline;
+		background: white;
+		}	
+		
+.selectLinks:hover {
+		color: blue;
+		text-decoration: none;
+		background: white;
+		}		
+        
+.borderGroove {
+        border-style:groove;
+        border-color: #104f8a;
+/*    border-top:1px solid grey;
+        border-left:1px solid grey;
+        border-right:1px solid grey;
+        border-bottom:1px solid grey;
+*/
+		}
+    
