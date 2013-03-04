@@ -20,7 +20,7 @@ for ($i = 0; $i < count($DisplayImgArrayMulti); $i++)
     $dispTitle = $DisplayImgArrayMulti[$i] ['title'];
     $DisplayMsg2 .= "
     <li>
-        <a class=\"bigBlueLink\" href=\"index.html?selectID=$dispKey\"
+        <a class=\"bigBlueLink\" href=\"index.php?selectID=$dispKey\"
                     onmouseover=\"Tip('<center> <img src=".$productDir."images/$dispImg width=500> <br>')\" 
                     onmouseout=\"UnTip()\">
                     $dispTitle

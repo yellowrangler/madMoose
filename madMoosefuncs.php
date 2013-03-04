@@ -377,7 +377,7 @@ function GetMainNav($selectID)
                     $result .=
                     "
                     <td width=".$MainNavTabUpperWidth." class=\"MainNavTabsUpperCellSelect\"> 
-                        <a href=\"index.html?selectID=".$NavArray [$i] ['key']."\" $DisplayToolTips class=\"MainNavTabsUpperCellSelect\">".$NavArray[$i] ['title']."</a>
+                        <a href=\"index.php?selectID=".$NavArray [$i] ['key']."\" $DisplayToolTips class=\"MainNavTabsUpperCellSelect\">".$NavArray[$i] ['title']."</a>
                     </td>
                     
                     ";		
@@ -387,7 +387,7 @@ function GetMainNav($selectID)
                     $result .=
                     "
                     <td width=".$MainNavTabUpperWidth." class=\"MainNavTabsUpperCell\"> 
-                        <a href=\"index.html?selectID=".$NavArray [$i] ['key']."\"  $DisplayToolTips class=\"MainNavTabsUpperCell\">".$NavArray[$i] ['title']."</a>
+                        <a href=\"index.php?selectID=".$NavArray [$i] ['key']."\"  $DisplayToolTips class=\"MainNavTabsUpperCell\">".$NavArray[$i] ['title']."</a>
                     </td>
                     
                     ";	
@@ -514,7 +514,7 @@ function GetLeftNav($selectID)
                 $result .=
                 "
                 <li><strong>
-                    <a href=\"index.html?selectID=".$NavArray[$i]['key']."\" $DisplayToolTips  >".$NavArray[$i]['title']."</a>
+                    <a href=\"index.php?selectID=".$NavArray[$i]['key']."\" $DisplayToolTips  >".$NavArray[$i]['title']."</a>
                 </strong></li>
                 ";		
             }
@@ -523,7 +523,7 @@ function GetLeftNav($selectID)
                 $result .=
                 "
                 <li>
-                    <a href=\"index.html?selectID=".$NavArray[$i]['key']."\" $DisplayToolTips >".$NavArray[$i]['title']."</a>
+                    <a href=\"index.php?selectID=".$NavArray[$i]['key']."\" $DisplayToolTips >".$NavArray[$i]['title']."</a>
                 </li>
                 ";	
             }	
@@ -583,7 +583,7 @@ function GetBreadCrumbs($selectID)
         $i = getNavArrayInstance($k);
 		$DisplayBreadCrumbs .= "
 			<td class=\"breadCrumb\"> 
-				<a href=\"index.html?selectID=".$k."\" class=\"breadCrumb\">
+				<a href=\"index.php?selectID=".$k."\" class=\"breadCrumb\">
 					".$NavArray[$i] ['title']."
 				</a>
 			</td>

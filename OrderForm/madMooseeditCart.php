@@ -86,11 +86,11 @@ switch ($Action)
             }
         } // end of for
 
-        $nextPage = "../index.html?selectID=AddToCart";
+        $nextPage = "../index.php?selectID=AddToCart";
         break;
         
      case "EmptyCart":
-        $nextPage = "../index.html?selectID=AddToCart&cartfunction=EmptyCart";
+        $nextPage = "../index.php?selectID=AddToCart&cartfunction=EmptyCart";
         break;  
         
     case "CheckOut":
@@ -109,7 +109,7 @@ switch ($Action)
             }
         } // end of for
 
-        $nextPage = "../index.html?selectID=CheckOut";
+        $nextPage = "../index.php?selectID=CheckOut";
         break;     
     
 } // end of switch

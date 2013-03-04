@@ -28,7 +28,7 @@ $DisplaySelections = "<table width=\"70%\" class=\"regTextsmall\">
                 
                 <tr>
                     
-                    <td class=\"verysmallText\" align=center valign=top <a href=\"index.html?selectID=$dispKey\"
+                    <td class=\"verysmallText\" align=center valign=top <a href=\"index.php?selectID=$dispKey\"
                         onmouseover=\"Tip('<center> <img src=".$productDir."images/$dispImgMulti width=500> <br>')\" 
                         onmouseout=\"UnTip()\">
                         <img  height=100 width=100 align=center border=0 src=".$productDir."images/$dispImgMulti></a>
@@ -38,7 +38,7 @@ $DisplaySelections = "<table width=\"70%\" class=\"regTextsmall\">
                <tr><td>$Spacer</td></tr>
                <tr>
                     
-                    <td class=\"verysmallText\" align=center valign=top <a href=\"index.html?selectID=$dispKey\"
+                    <td class=\"verysmallText\" align=center valign=top <a href=\"index.php?selectID=$dispKey\"
                         onmouseover=\"Tip('<center> <img src=".$productDir."images/$dispImgSingle width=500> <br>')\" 
                         onmouseout=\"UnTip()\">
                         <img  height=100 width=100 align=center border=0 src=".$productDir."images/$dispImgSingle></a>

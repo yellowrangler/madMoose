@@ -34,7 +34,7 @@ $DisplayTextMsg .= "Once you are finished go to the checkout page.</p> <p id=msg
 $DisplayTextMsg .= "<p id=msg>As a result, our checkout page will ask you to fill out name and address information after which we will present";
 $DisplayTextMsg .= " you with an invoice you must print out and send to us.<p>";
 
-$DisplayTextMsg .= "<br><a href=\"index.html?selectID=$dispKey\" onmouseover=\"Tip('<center> <img src=".$productDir."images/madMooseSamples.bmp width=500> <br>')\" 
+$DisplayTextMsg .= "<br><a href=\"index.php?selectID=$dispKey\" onmouseover=\"Tip('<center> <img src=".$productDir."images/madMooseSamples.bmp width=500> <br>')\" 
                         onmouseout=\"UnTip()\">
                         <img  height=73 width=178 align=\"center\" border=0 src=".$productDir."images/madMooseSamples.bmp></a>";
 $DisplayTextErr = "<p id=err></p>";

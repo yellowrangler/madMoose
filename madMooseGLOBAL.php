@@ -499,6 +499,6 @@ $FooterWidth = $BannerWidth;
 // Miscelaneous global variables
 //----------------------------------------------------------------------------------------------------------
 $Spacer = "&nbsp;&nbsp;";
-$module = 'index.html';
+$module = 'index.php';
 
 ?>

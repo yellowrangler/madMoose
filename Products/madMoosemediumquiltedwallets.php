@@ -73,7 +73,7 @@ $DisplayMsg2 = "
 
         <tr>
             <td align=left height=60 class=\"regText\"> 
-                 <a href=\"index.html?selectID=$AddtoCartKey&from=$CurrentModuleKey&cartfunction=Add\">
+                 <a href=\"index.php?selectID=$AddtoCartKey&from=$CurrentModuleKey&cartfunction=Add\">
                     <img border=0 src=\"".$productDir."images/addtocart.gif\">
                 </a>
             </td>

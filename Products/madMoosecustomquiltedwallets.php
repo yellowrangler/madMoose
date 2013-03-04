@@ -75,7 +75,7 @@ $DisplayMsg2 = "
     <table width=\"90%\">
         <tr>
             <td align=left height=60 class=\"regText\">
-            <i>To Purchase please click on the <a class=\"regTextItalicBoldNoUnderline\" href=\"index.html?selectID=OrderForm\"><b>Order Form</b></a> tab</i>
+            <i>To Purchase please click on the <a class=\"regTextItalicBoldNoUnderline\" href=\"index.php?selectID=OrderForm\"><b>Order Form</b></a> tab</i>
             </td>
         </tr>    
     </table>
