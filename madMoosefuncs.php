@@ -33,11 +33,11 @@ function salesLog($msg)
 	$strDateTime = date("Y-m-d H:i:s", $time);
 	$logname="logs/sales.log";
    
-    $fp = fopen($logname, "a"); 
+  $fp = fopen($logname, "a"); 
 
 	$logmsg = "$strDateTime\n";
-    $logmsg .= "$msg\n";
-    $logmsg .= "$strDateTime\n";
+  $logmsg .= "$msg\n";
+  $logmsg .= "$strDateTime\n";
 	fwrite($fp, $logmsg);
 	fclose($fp);
 	

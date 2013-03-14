@@ -380,7 +380,27 @@ $DisplayTable .= "
 
 ?>
 
-<form name="mmprintForm" method="POST" action="pumadMooseprintform.php" onsubmit="return createTarget(this.target, 815, 580)" target="formtarget">
+<!-- <form name="mmprintForm" method="POST" action="pumadMooseprintform.php" onsubmit="return createTarget(this.target, 815, 580)" target="formtarget"> -->
+<script type="text/javascript">
+function submitForm(whichForm)
+{
+	document.mmForm.action = whichForm;
+	
+	$.post("ajaxmadMooseform.php", $("#mmForm").serialize());
+	
+	document.mmForm.submit()
+}
+</script>
+<form id="mmForm" name="mmForm" method="post" onsubmit="return createTarget(this.target, 815, 580)" target="formtarget">
+	 <input type="hidden" name="cmd" value="_xclick">
+	 <input type="hidden" name="business" value="tarrant.cutler@gmail.com">
+	 <input type="hidden" name="lc" value="US">
+	 <input type="hidden" name="item_name" value="Quilted Wallet">
+	 <input type="hidden" name="amount" value="<?php print $CartTotalPrice; ?>">
+	 <input type="hidden" name="currency_code" value="USD">
+	 <input type="hidden" name="button_subtype" value="products">
+	 <input type="hidden" name="bn" value="PP-BuyNowBF:btn_buynowCC_LG.gif:NonHosted">
+<!-- <form name="mmprintForm" method="POST" action="pumadMoosepaypal.php" onsubmit="return createTarget(this.target, 815, 580)" target="formtarget"> -->
 <div class="madMooseItemText">
 <br><br>
 <table align=left width="100%">
@@ -394,27 +414,27 @@ $DisplayTable .= "
 <br><br>
  <table align=right width="100%">
         <tr>
-            <td align=center height=15 class="<? print $elementTitleClassHdr; ?>" colspan=5>
+            <td align=center height=15 class="<?php print $elementTitleClassHdr; ?>" colspan=5>
                 Invoice Details            
             </td>
         </tr>
         <tr>
-            <td align=center height=15 class="<? print $elementTitleClass; ?>">
+            <td align=center height=15 class="<?php print $elementTitleClass; ?>">
                 Type
             </td>
-            <td align=center height=15 class="<? print $elementTitleClass; ?>">
+            <td align=center height=15 class="<?php print $elementTitleClass; ?>">
                 Style
             </td>
-            <td align=center height=25 class="<? print $elementTitleClass; ?>">
+            <td align=center height=25 class="<?php print $elementTitleClass; ?>">
                 Fabric
             </td>
-            <td align=center height=15 class="<? print $elementTitleClass; ?>">
+            <td align=center height=15 class="<?php print $elementTitleClass; ?>">
                 Qty
             </td>
-            <td align=center height=15 class="<? print $elementTitleClass; ?>">
+            <td align=center height=15 class="<?php print $elementTitleClass; ?>">
                 Unit Price
             </td>
-            <td align=right height=15 class="<? print $elementTitleClass; ?>">
+            <td align=right height=15 class="<?php print $elementTitleClass; ?>">
                 Total<BR>Price
             </td>
         </tr>  
@@ -427,10 +447,15 @@ $DisplayTable .= "
 <div class="madMooseItemListBottom">
  <table width="90%">
         <tr>
-            <td  height=21 valign=middle align=left><input type=submit value="PrepareForm" name="Action"></td>
+            <td  height=21 valign=middle align=left><input onclick="submitForm('pumadMooseprintform.php')" type=button value="PrepareForm" name="Action"></td>
             <td width="5%">&nbsp;</td>
+						<td align="right">
+						<input type="image" src="https://www.paypal.com/en_US/i/btn/btn_buynowCC_LG.gif"
+						 border="0" onclick="submitForm('https://www.paypal.com/cgi-bin/webscr')" name="paypal" alt="PayPal - The safer, easier way to pay online!">
+						 <img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+						</td>
         </tr> 
 </table>
 </div>
-<input type="hidden" name="CartItemTotal" value="<? print $ControlImageWidth; ?>">	
+<input type="hidden" name="CartItemTotal" value="<?php print $ControlImageWidth; ?>">	
 </form>

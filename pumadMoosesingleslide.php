@@ -222,7 +222,7 @@ $DisplayItemArea = "<img border=1 src=\"$filename\" width=".$ControlImageWidth."
 	</tr>
 </table>	
 
-<input type="hidden" name="zoom" value="<? print $ControlImageWidth; ?>">	
+<input type="hidden" name="zoom" value="<?php print $ControlImageWidth; ?>">	
 <input type="hidden" name="filename" value="<?php print $filename; ?>">
 </form>
 </center>	

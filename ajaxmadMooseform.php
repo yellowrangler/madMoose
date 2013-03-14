@@ -3,7 +3,7 @@
 //----------------------------------------------------------------------------------------------------------
 // Set special globals.
 //----------------------------------------------------------------------------------------------------------
-$module = 'pumadMooseprintform.php';
+$module = 'ajaxmadMooseform.php';
 
 
 require ('madMooseGLOBAL.php');
@@ -90,137 +90,14 @@ else
 //----------------------------------------------------------------------------------------------------------
 
 //
-// Set class for table items
-//
-$elementClass = "regTextsmall";
-$elementTitleClassHdr = "regTextmediumBoldRed";
-$elementTitleClass = "regTextmediumBold";
-
-$DisplayAddressData ="
-                    <tr>
-                        <td align=center height=15 class=$elementTitleClassHdr colspan=2>
-                            Address Information      
-                        </td>
-                    </tr>
-                    <tr>
-                        <td align=center height=15 class=$elementTitleClassHdr colspan=2>
-                            $Spacer      
-                        </td>
-                    </tr>
-                    <tr>
-                        <td align=right height=15 class=$elementClass>
-                            Name:            
-                        </td>
-                       
-                        <td align=left height=15 class=$elementClass>$name</td>
-                        
-                    </tr>  
-                    <tr>
-                        <td align=right height=15 class=$elementClass>
-                            Address:            
-                        </td>
-                        
-                        <td align=left height=15 class=$elementClass>$address</td>
-                        
-                    </tr>
-                    <tr>
-                        <td align=right height=15 class=$elementClass>
-                            City:            
-                        </td>
-                        
-                        <td align=left height=15 class=$elementClass>$city</td>
-                           
-                    </tr>
-                    <tr>
-                        <td align=right height=15 class=$elementClass>
-                            State:            
-                        </td>
-                        
-                        <td align=left height=15 class=$elementClass>$state</td>
-                           
-                    </tr>
-                    <tr>
-                        <td align=right height=15 class=$elementClass>
-                            Zip Code:            
-                        </td>
-                        
-                        <td align=left height=15 class=$elementClass>$zipcode</td>
- 
-                    </tr>
-                    <tr>
-                        <td align=right height=15 class=$elementClass>
-                            Phone Nbr:            
-                        </td>
-                        
-                        <td align=left height=15 class=$elementClass>$phonenumber</td>
-                          
-                    </tr>
-                    <tr>
-                        <td align=right height=15 class=$elementClass>
-                            eMail:            
-                        </td>
-                        
-                        <td align=left height=15 class=$elementClass>$email</td>
-                            
-                    </tr>
-                  ";
-
-                  
-$MailToMadMoose ="
-                    <tr>
-                        <td align=center height=15 class=$elementTitleClass colspan=2>
-                            $Spacer       
-                        </td>
-                    </tr>
-                    <tr>
-                        <td align=center height=15 class=$elementTitleClass colspan=2>
-                            $Spacer      
-                        </td>
-                    </tr>
-                    <tr>
-                        <td align=center height=15 class=$elementTitleClass colspan=2>
-                            $Spacer       
-                        </td>
-                    </tr>
-                    <tr>
-                        <td align=center height=15 class=$elementTitleClass colspan=2>
-                            $Spacer      
-                        </td>
-                    </tr>
-                    <tr>
-                        <td align=center height=15 class=$elementTitleClassHdr colspan=2>
-                            Mail To      
-                        </td>
-                    </tr>
-                    <tr>
-                        <td align=center height=15 class=$elementTitleClass colspan=2>
-                            $Spacer      
-                        </td>
-                    </tr>
-                    <tr>
-                        <td align=left height=15 class=$elementTitleClass colspan=2>
-                              $madMooseMailAddress  
-                        </td>
-                    </tr>
-                  ";
-
-//
 //printCart();
 //$CartItems = getCartItems();
 //    $LineItemsArray = explode($FST, $CartItems);
 //print_r($LineItemsArray);
 //exit();
-
-//
-// Set class for table items
-//
-$elementClass = "regTextmedium";
-$elementTitleClass = "regTextmediumBold";
-
 $rcode = isShopingCartEmpty();
 if ($rcode == 0)
 {
-    
     //
     // Now build display fields
     //
@@ -424,54 +301,7 @@ $CartUnitTotalPrice = 0;
 //
 $CartShipHandle = $CartTotalQty * $ShipHandleAmount;
 $CartTotalPrice = $CartGrandTotalPrice + $CartShipHandle;
-$DisplayTable .= "
-        <tr>
-            <td align=center height=15 class=$elementClass>
-                $Spacers
-            </td>
-            <td align=center height=15 class=$elementClass>
-                $Spacers
-            </td>
-            <td align=center height=15 class=$elementClass>
-                $Spacers
-            </td>
-            <td align=right height=15 class=$elementClass colspan=2>
-                Sub Total
-            </td>
-            <td align=right height=15 class=$elementClass>
-                ".sprintf("%01.2f", $CartGrandTotalPrice)."
-            </td>
-        </tr>
-        
-        <tr>
-            <td align=center height=15 class=$elementClass>
-                $Spacers
-            </td>
-            <td align=right height=15 class=$elementClass colspan=4>
-                Shipping and Handling
-            </td>
-            <td align=right height=15 class=$elementClass>
-                ".sprintf("%01.2f", $CartShipHandle)."
-            </td>
-        </tr>
-        
-        <tr>
-            <td align=center height=15 class=$elementClass>
-                $Spacers
-            </td>
-            <td align=center height=15 class=$elementClass>
-                $Spacers
-            </td>
-            <td align=right height=15 class=$elementClass colspan=3>
-                Grand Total
-            </td>
-            <td align=right height=15 class=$elementClass>
-                ".sprintf("%01.2f", $CartTotalPrice)."
-            </td>
-        </tr>
-    ";
 
-    
 $Msg = "---Sale for Mad Moose Creations Start\n";
 $Msg .= "===Address Information\n";
 $Msg .= "       Name: $name\n";
@@ -509,20 +339,21 @@ $Msg .= "        Grand Total: ".sprintf("%01.2f", $CartTotalPrice)."\n";
 $Msg .= "   Total Line Items: $itemNbr\n";
 $Msg .= "---Sale for Mad Moose Creations End\n";
 
-$fromName = $name; //senders name
-$fromEmail = $email; //senders e-mail adress
-//$recipient = "lisa@MadMooseCreations.com"; //recipient
-$toEmail = "tarrant.cutler@gmail.com"; //recipient
-$body = $Msg; //mail body
-$body = "Test Body"; //mail body
-$subject = "MadMoose Creations Purchase"; //subject
-$header = "From: ". $fromName . " <" . $fromEmail . ">\n"; //optional headerfields
+$to = "tarrant.cutler@gmail.com";
+$subject = "MadMoose Creations Purchase"; 
+$eMail ['fromName'] = $name;
+$eMail ['fromAddr'] = $email;
+$eMail ['toAddr'] = $to;
+$eMail ['subject'] = $subject;
+$eMail ['body'] = $Msg;
+
+$rcode = sendEmail($eMail); 
 
 //ini_set("SMTP","outgoing.verizon.net" );
 //ini_set('sendmail_from', 'tarrant.cutler@gmail.com');
 //ini_set(smtp_port,"25");
 
-$rcode = mail($toEmail, $subject, $body, $header); //mail command :)
+
 $Msg .= "Mail retrncode = ".$rcode."\n";
 salesLog($Msg);
 
@@ -535,172 +366,7 @@ session_destroy();
 
 <html>
 <head>
-<title>MadMoose Creations Print Form</title>
-
-<style type="text/css">
-
-<?php require ("madMooseStyleSheet.css"); ?>
-
-.ArticleHeader {
-		font: 700 15px Arial,Helvetica; 
-		font-style: italic;
-		text-align: left;
-        width: 615px;
-		color:#666666;
-		}
-		
-.topBanner {
-		position: absolute;
-		left:1px;
-		top:1px;
-		height:50px;
-        width: 615px;   
-		border-top:1px solid white;
-		border-right:1px solid white;
-		border-left:1px solid white;
-		background:#fff;
-		}
-		
-.topLine   { 
-		color: #008080;
-		}
-
-.undertopLineArea {
-		position: absolute;
-		left:10px;
-		top:0px;
-        width: 615px;
-		color: black; 
-		line-height: 20px; 
-		font: 400 15px Arial, Geneva; 
-		text-decoration: none;
-		text-align: left;
-		}		
-
-.controlArea {
-		position: absolute;
-		left: 5px;
-		top:25px;
-		height:600px;
-        width: 625px;
-		border-top:1px solid white;
-		border-right:1px solid white;
-		border-left:1px solid white;
-		border-bottom:1px solid white;
-		background:#fff;
-		}		
-		
-.controlManager {
-		position: absolute;
-		left:0px;
-		top:0px;
-        width: 615px;
-		height:30px;
-		background: white;
-		}		
-
-
-.controlSubTopicDetail {
-		color: black;
-		text-align: center;
-		font: 500 13px Arial,Helvetica; 
-		height:13px;
-        width: 615px;
-		background: white;
-		}
-		
-.scanArea {
-		position: absolute;
-		left: 10px;
-		top:75px;
-		height:500px;
-		border-top:1px solid white;
-		border-right:1px solid white;
-		border-left:1px solid white;
-		border-bottom:1px solid white;
-		background:#fff;
-		}
-		
-.smallText2 {
-		font: 400 11px Arial, Geneva;
-		line-height: 14px; 
-		}		
-		
-.smallText2Bold {
-		font: 700 11px Arial, Geneva;
-		line-height: 14px; 
-		}		
-		
-.smallText {
-		font: 400 10px Verdana, Arial, Helvetica;
-		}
-		
-</style>
-
-<script type="text/javascript">
-<?php require ("javascript/madMooseJavaScript.js"); ?>
-
-</script>
-</head>
-
-<body>
-
-<form method="POST" name="printForm">
-
-<div class="madMooseItemText">
-<br><br>
-<table align=left width="100%">
-<?php print $DisplayAddressData; ?>
-
-<?php print $MailToMadMoose; ?>
-</table>
-</div>
-
-<div class="madMooseItemList">
-<br><br>
- <table align=right width="100%">
-        <tr>
-            <td align=center height=15 class="<?php print $elementTitleClassHdr; ?>" colspan=5>
-                Invoice Details            
-            </td>
-        </tr>
-        <tr>
-            <td align=center height=15 class="<?php print $elementTitleClass; ?>">
-                Type
-            </td>
-            <td align=center height=15 class="<?php print $elementTitleClass; ?>">
-                Style
-            </td>
-            <td align=center height=25 class="<?php print $elementTitleClass; ?>">
-                Fabric
-            </td>
-            <td align=center height=15 class="<?php print $elementTitleClass; ?>">
-                Qty
-            </td>
-            <td align=center height=15 class="<?php print $elementTitleClass; ?>">
-                Unit Price
-            </td>
-            <td align=right height=15 class="<?php print $elementTitleClass; ?>">
-                Total<BR>Price
-            </td>
-        </tr>  
-       
-    <?php print $DisplayTable; ?>
-
-</table>
-</div>
-<div class="madMooseItemListBottom">
- <table width="90%">
-        <tr>
-            <td  height=21 valign=middle align=left><input type=button OnClick="printDoc()" value="PrintForm" name="Action"></td>
-            <td width="5%">&nbsp;</td>
-
-            <td  height=21 valign=middle align=right><input type=button onClick="window.close()" value="CloseForm" name="CloseForm"></td>
-            <td width="5%">&nbsp;</td>
-
-        </tr>  
-</table>
-</div>
+<title>MadMoose Creations ajax Form</title>
 
 </body>
 </html>		

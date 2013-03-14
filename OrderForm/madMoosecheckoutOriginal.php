@@ -395,27 +395,27 @@ $DisplayTable .= "
 <br><br>
  <table align=right width="100%">
         <tr>
-            <td align=center height=15 class="<? print $elementTitleClassHdr; ?>" colspan=5>
+            <td align=center height=15 class="<?php print $elementTitleClassHdr; ?>" colspan=5>
                 Invoice Details            
             </td>
         </tr>
         <tr>
-            <td align=center height=15 class="<? print $elementTitleClass; ?>">
+            <td align=center height=15 class="<?php print $elementTitleClass; ?>">
                 Type
             </td>
-            <td align=center height=15 class="<? print $elementTitleClass; ?>">
+            <td align=center height=15 class="<?php print $elementTitleClass; ?>">
                 Style
             </td>
-            <td align=center height=25 class="<? print $elementTitleClass; ?>">
+            <td align=center height=25 class="<?php print $elementTitleClass; ?>">
                 Fabric
             </td>
-            <td align=center height=15 class="<? print $elementTitleClass; ?>">
+            <td align=center height=15 class="<?php print $elementTitleClass; ?>">
                 Qty
             </td>
-            <td align=center height=15 class="<? print $elementTitleClass; ?>">
+            <td align=center height=15 class="<?php print $elementTitleClass; ?>">
                 Unit Price
             </td>
-            <td align=right height=15 class="<? print $elementTitleClass; ?>">
+            <td align=right height=15 class="<?php print $elementTitleClass; ?>">
                 Total<BR>Price
             </td>
         </tr>  
@@ -433,5 +433,5 @@ $DisplayTable .= "
         </tr>  
 </table>
 </div>
-<input type="hidden" name="CartItemTotal" value="<? print $ControlImageWidth; ?>">	
+<input type="hidden" name="CartItemTotal" value="<?php print $ControlImageWidth; ?>">	
 </form>

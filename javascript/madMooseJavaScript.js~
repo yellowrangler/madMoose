@@ -1,10 +1,10 @@
 function startUp() 
 {
-	<? print $runJavascrupt; ?> 
+	<?php print $runJavascrupt; ?> 
 	
-	<? print $JavaScriptLogMsg; ?> 
+	<?php print $JavaScriptLogMsg; ?> 
 	
-	<? print $javaScriptMsg; ?> 
+	<?php print $javaScriptMsg; ?> 
 }
 
 function processSelection(id, popInd, pURL, ht, wt, restrict) 
