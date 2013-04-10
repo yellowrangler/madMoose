@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>currentDocument</key>
-	<string>logs/sales.log</string>
+	<string>Products/madMooseproducts.php</string>
 	<key>documents</key>
 	<array>
 		<dict>
@@ -18,7 +18,7 @@
 		</dict>
 	</array>
 	<key>fileHierarchyDrawerWidth</key>
-	<integer>342</integer>
+	<integer>255</integer>
 	<key>metaData</key>
 	<dict>
 		<key>OrderForm/madMoosecheckout.php</key>
@@ -26,14 +26,30 @@
 			<key>caret</key>
 			<dict>
 				<key>column</key>
-				<integer>42</integer>
+				<integer>10</integer>
 				<key>line</key>
-				<integer>388</integer>
+				<integer>382</integer>
 			</dict>
+			<key>columnSelection</key>
+			<false/>
 			<key>firstVisibleColumn</key>
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
-			<integer>381</integer>
+			<integer>196</integer>
+			<key>selectFrom</key>
+			<dict>
+				<key>column</key>
+				<integer>6</integer>
+				<key>line</key>
+				<integer>382</integer>
+			</dict>
+			<key>selectTo</key>
+			<dict>
+				<key>column</key>
+				<integer>10</integer>
+				<key>line</key>
+				<integer>382</integer>
+			</dict>
 		</dict>
 		<key>OrderForm/madMooseorderform.php</key>
 		<dict>
@@ -62,6 +78,20 @@
 			<integer>0</integer>
 			<key>firstVisibleLine</key>
 			<integer>0</integer>
+		</dict>
+		<key>Products/madMooseproducts.php</key>
+		<dict>
+			<key>caret</key>
+			<dict>
+				<key>column</key>
+				<integer>0</integer>
+				<key>line</key>
+				<integer>0</integer>
+			</dict>
+			<key>firstVisibleColumn</key>
+			<integer>0</integer>
+			<key>firstVisibleLine</key>
+			<integer>30</integer>
 		</dict>
 		<key>ajaxmadMooseform.php</key>
 		<dict>
@@ -156,14 +186,14 @@
 		<string>madMoosefuncs.php</string>
 		<string>logs/sales.log</string>
 		<string>OrderForm/madMooseorderform.php</string>
+		<string>Products/madMooseproducts.php</string>
 		<string>OrderForm/madMoosewaCheckOut.php</string>
 		<string>OrderForm/madMoosecheckout.php</string>
-		<string>index.html</string>
 		<string>index.php</string>
 	</array>
 	<key>showFileHierarchyDrawer</key>
 	<true/>
 	<key>windowFrame</key>
-	<string>{{-1232, -190}, {1186, 934}}</string>
+	<string>{{265, 4}, {1015, 774}}</string>
 </dict>
 </plist>
